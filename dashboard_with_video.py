@@ -49,16 +49,6 @@ app.layout = html.Div(style={"backgroundColor": "#111111", "color": "#FFFFFF", "
         dcc.Tab(label='🏢 Launch Organizations', children=[
             dcc.Graph(figure=fig_org)
         ]),
-        dcc.Tab(label='🎬 Animation', children=[
-            html.Div([
-                html.H3("Animated Launch Timeline (1957–2020)", style={"color": "white", "marginTop": "20px"}),
-                html.Video(
-                    controls=True,
-                    src="/assets/space_launches_over_time.mp4",
-                    style={"width": "100%", "maxWidth": "800px", "margin": "0 auto", "display": "block"}
-                )
-            ])
-        ]),
     ], style={'color': '#000'}, content_style={'backgroundColor': '#222', 'padding': '20px'})
 ])
 
