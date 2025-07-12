@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: space-dashboard
+    env: python
+    buildCommand: ""
+    startCommand: python dashboard_with_video.py
+    plan: free
